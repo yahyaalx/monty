@@ -23,9 +23,10 @@ stack_t *create_node(int n)
  * @new_node: Pointer to the new node
  * @ln: line num of the opcode
  */
-void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
+void add_to_queue(stack_t **new_node, unsigned int ln)
 {
 	stack_t *tmp;
+(void)ln;
 
 	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
